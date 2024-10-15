@@ -1,0 +1,140 @@
+.main {
+  margin-top: 60px;
+}
+
+.produces-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media (max-width: 2000px) {
+  .produces-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .produces-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .produces-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .produces-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .produces-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .produces-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .produces-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.produce-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.produce-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.produce-image {
+  /* Images will overflow their container by default. To
+    prevent this, we set max-width and max-height to 100%
+    so they stay inside their container. */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.produce-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.produce-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.produce-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.produce-rating-count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.produce-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.produce-quantity-container {
+  margin-bottom: 17px;
+}
+
+.produce-spacer {
+  flex: 1;
+}
+
+.added-to-cart {
+  color: rgb(6, 125, 98);
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
+  opacity: 0;
+}
+
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+}
